@@ -22,7 +22,7 @@
     }).addTo(map);
 
     // URL del WFS con bbox para un área pequeña (San Juan)
-    const wfsUrl = 'http://geoserver2.pr.gov/geoserver/pr_geodata/wfs?service=WFS&version=1.0.0&request=GetFeature&typeName=pr_geodata:parcela&outputFormat=application/json&bbox=18.41,-66.08,18.43,-66.04,EPSG:4326';
+    const wfsUrl = 'https://geoserver2.pr.gov/geoserver/pr_geodata/wfs?service=WFS&version=1.0.0&request=GetFeature&typeName=pr_geodata:parcela&outputFormat=application/json&bbox=18.41,-66.08,18.43,-66.04,EPSG:4326';
 
     // Usar proxy HTTPS para evitar problemas de Mixed Content
     const proxyUrl = 'https://corsproxy.io/?' + encodeURIComponent(wfsUrl);
